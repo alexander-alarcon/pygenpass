@@ -1,0 +1,27 @@
+# Python related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+*.egg-info/
+*.egg
+*.so
+*.pyc
+*.pyo
+*.pyd
+
+# Poetry related files
+*.egg-info/
+.venv/
+.pytest_cache/
+poetry.lock
+poetry.toml
+
+# IDE files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.log
+.DS_Store
