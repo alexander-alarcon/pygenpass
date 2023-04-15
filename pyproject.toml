@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "genpass"
+name = "pygenpass"
 version = "0.1.0"
 description = ""
 authors = ["Alexander Alarcon <walarcon14@gmail.com>"]

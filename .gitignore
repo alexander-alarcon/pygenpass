@@ -25,3 +25,4 @@ poetry.toml
 # Miscellaneous
 *.log
 .DS_Store
+dist/

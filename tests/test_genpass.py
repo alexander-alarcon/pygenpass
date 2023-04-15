@@ -4,7 +4,7 @@ import pyperclip
 import pytest
 from pytest import MonkeyPatch
 
-import genpass.main as m
+import pygenpass.main as m
 
 
 class TestReadArgs:
