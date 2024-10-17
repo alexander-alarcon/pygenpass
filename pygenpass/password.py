@@ -11,7 +11,7 @@ def generate_password(options: PasswordOptions) -> str:
     if options.all:
         if options.letters or options.digits or options.special_chars:
             raise GeneratingPasswordError(
-                "Error: The --all flag canot be combined with --letters, --digits or --special-chars"
+                "Error: The --all flag cannot be combined with --letters, --digits, or --special-chars."
             )
         chars = string.ascii_letters + string.digits + string.punctuation
     else:
@@ -24,7 +24,7 @@ def generate_password(options: PasswordOptions) -> str:
 
         if not chars:
             raise GeneratingPasswordError(
-                "Error: At least one of --all, --letters, --digits or --special-chars must be specified"
+                "Error: At least one of --all, --letters, --digits, or --special-chars must be specified. Please choose at least one."
             )
 
     return "".join(choices(chars, k=options.length))
