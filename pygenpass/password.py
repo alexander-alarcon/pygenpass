@@ -7,6 +7,15 @@ from pygenpass.errors import GeneratingPasswordError
 
 
 def generate_password(options: PasswordOptions) -> str:
+    """
+    Generates a password with the specified options.
+
+    Args:
+        options (PasswordOptions): Options for generating the password.
+
+    Returns:
+        str: Generated password.
+    """
     chars: LiteralString = ""
     if options.all:
         if options.letters or options.digits or options.special_chars:

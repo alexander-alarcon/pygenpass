@@ -20,6 +20,12 @@ class Args(NamedTuple):
 
 
 def read_args() -> Args:
+    """
+    Handles the CLI arguments.
+
+    Returns:
+        Args: The parsed arguments.
+    """
     parser = ArgumentParser(description="Generate password")
     parser.add_argument(
         "-l",
