@@ -1,6 +1,5 @@
 import string
 from random import choices, shuffle
-from typing import LiteralString
 
 from pygenpass.args import PasswordOptions
 from pygenpass.errors import GeneratingPasswordError

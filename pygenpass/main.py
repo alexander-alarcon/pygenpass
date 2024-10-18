@@ -17,9 +17,7 @@ def main() -> None:
             print("Password was copied to clipboard...")
         else:
             print(password)
-    except ArgsParsingError as e:
-        print(str(e))
-    except GeneratingPasswordError as e:
+    except (ArgsParsingError, GeneratingPasswordError) as e:
         print(str(e))
 
 
