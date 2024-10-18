@@ -73,7 +73,7 @@ def read_args() -> Args:
 
     if args.all and (args.letters or args.digits or args.special_chars):
         raise ArgsParsingError(
-            "Error: The --all flag cannot be used with --letters, --digits, or --special-chars."
+            "The --all flag cannot be used with --letters, --digits, or --special-chars."
         )
 
     if not args.all and not (args.letters or args.digits or args.special_chars):
@@ -81,7 +81,7 @@ def read_args() -> Args:
 
     if args.length < 8:
         raise ArgsParsingError(
-            "Error: Password length must be at least 8 characters. Please choose a longer length."
+            "Password length must be at least 8 characters. Please choose a longer length."
         )
 
     return Args(
